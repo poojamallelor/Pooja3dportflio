@@ -1,0 +1,68 @@
+// Proof of work. `tier` drives visual weight in the gallery.
+
+export const achievements = [
+  {
+    id: "nptel-java",
+    title: "Programming in Java",
+    issuer: "NPTEL · IIT Kharagpur",
+    highlight: "Silver Certificate",
+    metrics: ["Top 1% Rank", "86%"],
+    tier: "primary",
+    accent: "amber",
+  },
+  {
+    id: "nptel-dbms",
+    title: "Database Management Systems",
+    issuer: "NPTEL · IIT Kharagpur",
+    highlight: "Elite Certificate",
+    metrics: ["72%"],
+    tier: "secondary",
+    accent: "violet",
+  },
+  {
+    id: "hackerrank-java",
+    title: "Java",
+    issuer: "HackerRank",
+    highlight: "5 Star · Gold",
+    metrics: [],
+    tier: "secondary",
+    accent: "amber",
+  },
+  {
+    id: "patent",
+    title: "Patent Filed",
+    issuer: "Scheduler Project Idea",
+    highlight: "Patent Filed",
+    metrics: [],
+    tier: "primary",
+    accent: "magenta",
+  },
+  {
+    id: "research-paper",
+    title: "Published Research Paper",
+    issuer: "Learning Disability Detection System",
+    highlight: "Research Publication",
+    metrics: [],
+    tier: "primary",
+    accent: "coral",
+  },
+  {
+    id: "gdg-workshop",
+    title: "2-Day Web Development Workshop",
+    issuer:
+      "Google Developer Groups On Campus · N.K. Orchid College of Engineering & Technology",
+    highlight: "Completed",
+    metrics: [],
+    tier: "secondary",
+    accent: "violet",
+  },
+  {
+    id: "genai-workshop",
+    title: "Generative AI Workshop",
+    issuer: "Workshop",
+    highlight: "Attended",
+    metrics: [],
+    tier: "secondary",
+    accent: "magenta",
+  },
+];
