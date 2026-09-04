@@ -51,9 +51,9 @@ function DigitalCore() {
   });
 
   return (
-    <group scale={0.8}>
+    <group scale={1.1}>
       <mesh ref={inner}>
-        <icosahedronGeometry args={[0.85, 3]} />
+        <sphereGeometry args={[0.85, 64, 64]} />
         <meshStandardMaterial
           color="#1b1030"
           emissive={MAGENTA}
@@ -233,9 +233,9 @@ function CameraRig() {
   useFrame((state, delta) => {
     const dt = Math.min(delta, 0.05);
     const p = worldState.scroll;
-    const targetX = Math.sin(p * Math.PI * 2) * 3.2 + worldState.mouseX * 1.1;
+    const targetX = Math.sin(p * Math.PI * 2) * 10.0 + worldState.mouseX * 1.5;
     const targetY = 0.6 + Math.sin(p * Math.PI) * 2.4 - worldState.mouseY * 0.8;
-    const targetZ = 9.5 - Math.sin(p * Math.PI) * 3.2;
+    const targetZ = 9.5 - Math.sin(p * Math.PI) * 5.0;
 
     state.camera.position.x = damp(state.camera.position.x, targetX, 2.2, dt);
     state.camera.position.y = damp(state.camera.position.y, targetY, 2.2, dt);

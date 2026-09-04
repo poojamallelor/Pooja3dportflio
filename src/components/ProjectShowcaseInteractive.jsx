@@ -165,9 +165,11 @@ export default function ProjectShowcaseInteractive({ projects, theme = "react" }
                   {activeProject.title}
                 </h3>
                 
-                <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
-                  {activeProject.description}
-                </p>
+                <div className="rounded-xl border border-white/10 bg-surface-2/60 backdrop-blur-md p-5 shadow-glow transition-all duration-300 hover:shadow-[0_0_20px_2px_rgba(139,92,246,0.4)]">
+                  <p className="text-sm sm:text-base leading-relaxed text-foreground/95">
+                    {activeProject.description}
+                  </p>
+                </div>
                 
                 {/* Highlights or Achievement Connection (Fallback for Full Stack objects) */}
                 {(activeProject.highlights || activeProject.achievementConnection) && (

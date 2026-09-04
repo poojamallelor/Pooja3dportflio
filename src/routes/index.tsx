@@ -19,7 +19,9 @@ import Hackathons from "../sections/Hackathons";
 import BeyondCode from "../sections/BeyondCode";
 import InterviewMode from "../sections/InterviewMode";
 import WhyHire from "../sections/WhyHire";
+import DeveloperSystem from "../sections/DeveloperSystem";
 import Contact from "../sections/Contact";
+import FloatingAIAssistant from "../components/FloatingAIAssistant";
 
 const title = "Pooja Mallelor — Java Full Stack Developer Portfolio";
 const description =
@@ -87,8 +89,10 @@ function Index() {
         <BeyondCode />
         <InterviewMode />
         <WhyHire />
+        <DeveloperSystem />
         <Contact />
       </main>
+      <FloatingAIAssistant />
     </div>
   );
 }

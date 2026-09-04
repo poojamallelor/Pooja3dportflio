@@ -137,6 +137,23 @@
   .lenis.lenis-smooth {
     scroll-behavior: auto !important;
   }
+
+  /* Universal light effect for buttons and boxes */
+  button,
+  .panel,
+  [class*="bg-surface"],
+  [class*="bg-surface-2"],
+  [class*="bg-card"] {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  button:hover,
+  .panel:hover,
+  [class*="bg-surface"]:hover,
+  [class*="bg-surface-2"]:hover,
+  [class*="bg-card"]:hover {
+    box-shadow: 0 0 20px 2px color-mix(in oklab, var(--violet) 40%, transparent);
+  }
 }
 
 @utility mono-label {

@@ -40,39 +40,5 @@ export default function AchievementWorld() {
     }
   });
 
-  return (
-    <group ref={root} position={[0, 0, -2]}>
-      <Float speed={1} rotationIntensity={0.2} floatIntensity={0.6}>
-        <mesh ref={prism}>
-          <coneGeometry args={[1.1, 2.4, 6]} />
-          <meshStandardMaterial
-            color="#F59E0B"
-            emissive="#F59E0B"
-            emissiveIntensity={0.9}
-            metalness={0.95}
-            roughness={0.15}
-            transparent
-            opacity={0.75}
-          />
-        </mesh>
-      </Float>
-
-      <group ref={ring}>
-        {Array.from({ length: 8 }, (_, i) => {
-          const a = (i / 8) * Math.PI * 2;
-          return (
-            <mesh key={i} position={[Math.cos(a) * 3, Math.sin(a * 2) * 0.6, Math.sin(a) * 3]}>
-              <torusGeometry args={[0.28, 0.045, 10, 40]} />
-              <meshStandardMaterial
-                color={i % 2 ? "#EC4899" : "#FB7185"}
-                emissive={i % 2 ? "#EC4899" : "#FB7185"}
-                emissiveIntensity={2}
-                toneMapped={false}
-              />
-            </mesh>
-          );
-        })}
-      </group>
-    </group>
-  );
+  return null;
 }
