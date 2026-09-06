@@ -145,7 +145,7 @@ export const reactProjects = [
       "A multi-model AI system based on Retrieval-Augmented Generation (RAG), designed to provide intelligent and context-aware responses by combining retrieved knowledge with multiple AI models.",
     image: "/projects/multi-expert.png",
     flow: ["USER", "REACT INTERFACE", "RETRIEVAL", "KNOWLEDGE", "MULTIPLE AI MODELS", "CONTEXT-AWARE RESPONSE"],
-    liveUrl: "https://multi-expert-ai-council.poojamallelor.workers.dev/",
+    liveUrl: "https://multi-expert-ai-main2.poojamallelor.workers.dev/",
     githubUrl: "",
   },
   {
