@@ -21,7 +21,7 @@ export const fullStackProjects = [
     description:
       "AI-powered interview and group discussion preparation platform that helps students practice interviews, improve communication and receive AI-generated feedback.",
     image: "/projects/nexthire.png",
-    liveUrl: "https://ai-interview-platform-flame-eight.vercel.app/",
+    liveUrl: "https://ai-interview-platform-taupe-one.vercel.app/",
     githubUrl: "https://github.com/poojamallelor/ai-interview-platform",
   },
   {
